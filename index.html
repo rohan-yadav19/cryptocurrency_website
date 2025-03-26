@@ -5,12 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CryptoCurrency Website</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
   </head>
   <body>
     <div class="container">
       <nav>
         <img src="images/logo.png" class="logo" />
-        <ul>
+        <div class="menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links">
           <li><a href="#">Market</a></li>
           <li><a href="#">Features</a></li>
           <li><a href="#">White Papers</a></li>
@@ -27,28 +34,29 @@
         <a href="#" class="btn">EXPLORE MORE</a>
       </div>
       <div class="coin-list">
-        <div class="coin">
+        <div class="coin" id="bitcoin">
           <img src="images/bitcoin.png" />
           <div>
-            <h3>$00</h3>
+            <h3>$<span class="price">00</span></h3>
             <p>Bitcoin</p>
           </div>
         </div>
-        <div class="coin">
+        <div class="coin" id="ethereum">
           <img src="images/ethereum.png" />
           <div>
-            <h3>$00</h3>
+            <h3>$<span class="price">00</span></h3>
             <p>Ethereum</p>
           </div>
         </div>
-        <div class="coin">
+        <div class="coin" id="dogecoin">
           <img src="images/dogecoin.png" />
           <div>
-            <h3>$00</h3>
+            <h3>$<span class="price">00</span></h3>
             <p>Dogecoin</p>
           </div>
         </div>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
